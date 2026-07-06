@@ -54,7 +54,7 @@ export default function AdminLogin() {
 
       if (response.ok) {
         localStorage.setItem('adminInfo', JSON.stringify(data));
-        router.push('/prabjot');
+        router.push('/admin');
       } else {
         setError(data.message || 'Login failed');
       }
